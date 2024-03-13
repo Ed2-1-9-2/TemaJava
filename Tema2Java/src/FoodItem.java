@@ -42,7 +42,13 @@ public class FoodItem implements Comparable<FoodItem> {
     public int compareTo(FoodItem other) {
         return this.name.compareTo(other.name);
     }
+    public float calculateCaloricDensity() {
+        return calories / weight;
+    }
 
+    public boolean isFruit() {
+        return type == FoodType.Fruit;
+    }
     @Override
     public String toString() {
         return "FoodItem{" +

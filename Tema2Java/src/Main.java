@@ -14,6 +14,17 @@ public class Main {
         store.addItem(Apple);
         store.addItem(Banana);
         store.addItem(Bread);
+        // Apelam daca putem calcula densitatea fiecarui fruct si un bool pentru confirmarea fructului
+
+        System.out.println("Apple density: " + Apple.calculateCaloricDensity());
+        System.out.println("Is Apple a fruit? " + Apple.isFruit());
+
+        System.out.println("Banana density: " + Banana.calculateCaloricDensity());
+        System.out.println("Is Banana a fruit? " + Banana.isFruit());
+
+        System.out.println("Bread density: " + Bread.calculateCaloricDensity());
+        System.out.println("Is Bread a fruit? " + Bread.isFruit());
+
 
         System.out.println("Information of this store:");
 
